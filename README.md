@@ -9,4 +9,5 @@
 		Для типізації UserListProps, створили окремий вайл types.tsx. Вказали там interface IUser. 
 
 		Створили імітацію БД у App.tsx. 
-
+3) ComponentUserItem: 
+		Створили Декомпозицію вже уснуючого компонента  UserList.
