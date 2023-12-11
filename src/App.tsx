@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import Card, { CardVariant } from "./components/Card";
 
 function App() {
-  const [count, setCount] = useState(0)
   return (
     <div>
-      hello
+      <Card variant={CardVariant.primary} height="200px" width="200px">
+        <button>asdas</button>
+      </Card>
     </div>
   );
 }
