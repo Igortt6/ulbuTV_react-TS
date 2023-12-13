@@ -9,5 +9,9 @@
 		Для типізації UserListProps, створили окремий вайл types.tsx. Вказали там interface IUser. 
 
 		Створили імітацію БД у App.tsx. 
-3) ComponentUserItem: 
+3) Component UserItem: 
 		Створили Декомпозицію вже уснуючого компонента  UserList.
+
+4) Axios запит. Типізація ХУКа UseState
+		Створюємо UseState з масивом - дженеріком IUser.
+		fetchUsers з запитом на сервер Axios, з вказанням дженеріка. Для типізації відповіді від сервера 
