@@ -6,6 +6,7 @@ import axios from "axios";
 import List from "./components/List";
 import UserItem from "./components/UserItem";
 import TodoItem from "./components/TodoItem";
+import EventExample from "./components/EventExample";
 
 function App() {
 
@@ -37,6 +38,7 @@ function App() {
 
   return (
     <div>
+      <EventExample />
       <Card variant={CardVariant.primary} height="200px" width="200px">
         <button>asdas</button>
       </Card>
