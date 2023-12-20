@@ -3,6 +3,8 @@ import Card, { CardVariant } from "./components/Card";
 import UserList from "./components/UserList";
 import { IUser } from "./types/types";
 import axios from "axios";
+import List from "./components/List";
+import UserItem from "./components/UserItem";
 
 function App() {
 
@@ -26,7 +28,10 @@ function App() {
       <Card variant={CardVariant.primary} height="200px" width="200px">
         <button>asdas</button>
       </Card>
-      <UserList users={users} />
+      {/* <UserList users={users} /> */}
+      <List
+        items={users}
+        renderItems={(user: IUser) => <UserItem user={user} key={user.id} />} />
     </div>
   );
 }
