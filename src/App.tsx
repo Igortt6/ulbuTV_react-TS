@@ -4,6 +4,7 @@ import EventExample from "./components/EventExample";
 import TodosPage from "./components/TodosPage";
 import UserPage from "./components/UserPage";
 import { FC } from "react";
+import UserItemPage from './components/UserItemPage';
 
 const App: FC = () => {
 
@@ -21,8 +22,8 @@ const App: FC = () => {
 
       <Routes  >
         <Route path="/users" element={<UserPage />} />
+        <Route path="/users/:id" element={<UserItemPage />} />
         <Route path="/todos" element={<TodosPage />} />
-
       </Routes>
     </Router>
 

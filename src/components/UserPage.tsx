@@ -3,10 +3,13 @@ import { IUser } from "../types/types";
 import axios from "axios";
 import List from "./List";
 import UserItem from "./UserItem";
+import { useNavigate } from "react-router-dom";
 
 const UserPage: FC = () => {
 
     const [users, setUsers] = useState<IUser[]>([]);
+    const navigate = useNavigate();
+
 
     useEffect(() => {
         fetchUsers()
@@ -24,7 +27,7 @@ const UserPage: FC = () => {
     return (
         <List
             items={users}
-            renderItems={(user: IUser) => <UserItem user={user} key={user.id} />}
+            renderItems={(user: IUser) => <UserItem onClick={(user) => navigate('/users/' + user.id)} user={user} key={user.id} />}
         />
     )
 }
